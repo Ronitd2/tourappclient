@@ -1,5 +1,5 @@
 .header1{
-    background-image: url('images/img1.png');
+    background: url('../images/img1.png');
     background-size: cover;
     height: 500px;
 }
