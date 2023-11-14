@@ -1,0 +1,28 @@
+.state_bg{
+    height: 550px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+}
+.state_heading{
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    font-weight: 630;
+    color: rgb(31, 34, 37);
+}
+.state_title h5{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.state_title p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.state_button{
+    border: none;
+    background-color: white;
+}

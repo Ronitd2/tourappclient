@@ -1,0 +1,164 @@
+
+.logo img{
+    height: 80px;
+    width: 100px;
+}
+.logo{
+    float: left;
+}
+.list{
+    float: right;
+}
+.list li{
+    display: inline-block;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+.list a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* .list a:hover{
+    color:rgb(108, 255, 63)
+} */
+/* .navsec{
+   background-color: #3C486B;
+    
+} */
+.navfeat
+{
+    float: right;
+    margin-top: 15px;
+}
+.feat{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+}
+.feat:hover{
+    color: #16FF00;
+    cursor: pointer;;
+}
+.logos{
+    height: 120px;
+    width: 200px;
+    float: left;
+}
+
+
+/* search section */
+.searchsec{
+    margin-top: 75px;
+}
+.headline2{
+    color:#3C486B;
+    font-weight:bold;
+}
+.searcharea{
+    width: 400px;
+    border-radius: 15px;
+}
+.searchbtn{
+    /* background-color: #16FF00; */
+    border-radius: 15px;
+    width: 50px;
+}
+.searchbtn:hover{
+    background-color: #16FF00; 
+}
+.searchlogo{
+    height: 15px;
+    width: 15px;    
+}
+.btnlog{
+  font-weight: bold;
+  color: #3C486B
+}
+
+
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom:1rem;
+ }
+ 
+ .navbar .dropdown-menu {
+   border:none;
+   background-color:white!important;
+ }
+ 
+ /* breakpoint and up - mega dropdown styles */
+ @media screen and (min-width: 992px) {
+   
+   /* remove the padding from the navbar so the dropdown hover state is not broken */
+ .navbar {
+   padding-top:0px;
+   padding-bottom:0px;
+ }
+ 
+ /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+ .navbar .nav-item {
+   padding:.5rem .5rem;
+   margin:0 .25rem;
+ }
+ 
+ /* makes the dropdown full width  */
+ .navbar .dropdown {position:static;}
+
+ .area .dropdown-menu {
+  width:10%;
+  
+ }
+ 
+ .navbar .dropdown-menu {
+   width:50%;
+   left:35%;
+   right:0;
+ /*  height of nav-item  */
+   top:65px;
+   
+   display:block;
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s, opacity 0.3s linear;
+   
+ }
+
+  
+ 
+   
+   /* shows the dropdown menu on hover */
+ .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+   display:block;
+   visibility: visible;
+   opacity: 1;
+   transition: visibility 0s, opacity 0.3s linear;
+ }
+   
+   .navbar .dropdown-menu {
+     border-top: 4px solid ;
+     border-color:#224B0C;
+     border-radius: 8px;
+     background-color: #fff;
+   }
+   .text-state{
+    color: #224B0C;
+    font-weight: bold;
+    font-size: 1.3rem;
+   }
+   .hhh{
+    color: #3C486B;
+    font-size: 1rem
+   }
+   .hhh:hover{
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .2s
+   }
+ }
+
+

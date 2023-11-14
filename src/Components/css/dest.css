@@ -1,0 +1,152 @@
+.destsec{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display:flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.weatherpic{
+    height: 35px;
+    width: 35px;
+}
+
+.dash{
+    color: #252B48;
+    
+}
+
+.text2{
+    color: #445069;
+}
+.dashuser{
+    display: flex;
+}
+.dashleft{
+    background-color:#06113C;
+    width: 300px;
+    height:620px;
+}
+.dashright{
+    padding:20px;
+    width: 100%;
+}
+.traveldetails{
+    display: flex;
+    margin-top: 30px;
+}
+.upcoming-ticket{
+    width: 40%;
+    height: 100%;
+    /* background-color:aqua; */
+    margin-right: 5px;
+}
+.bookhistory{
+    width: 60%;
+    border: 5px;
+    border-color: black;
+}
+
+.upcoming_elements{
+   margin-bottom: 15px;
+   border-color: #D0BFFF;
+   border-width: 2px;
+   background-color: #FFFFFF;
+}
+
+.upcoming_entities{
+    margin-right: 10px ;
+}
+
+.userpic{
+    height: 100px;
+    width: 100px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.username{
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.destination{
+    margin-left: 30px;
+}
+.destpic{
+    height: 40px;
+    width: 40px;
+
+}
+.travel-list-text{
+    font-size: 1rem;
+    color: #445069;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.desttext{
+    display: inline;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 7px;
+}
+
+.destcomp{
+    border-width:2px;
+    border-style:solid;
+    border-color:#445069;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+.destcompic{
+    float: left;
+    height: 170px;
+    width: 180x;
+    margin-right: 10px;
+}
+
+.destpart2{
+    display: flex;
+    justify-content: space-between;
+}
+.gghg{
+    font-weight: bold;
+    color:#445069;
+}
+
+.fsa{
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.addbtn{
+    height: 60px;
+    width: 160px;
+    font-weight: bold;
+    
+}
+.h11{
+    color: #016A70; 
+}
+.t1{
+    font-weight: bold;
+    color: #4B527E;
+}
+.c2{
+    font-size: 0.9 rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #445069;
+}
+.travellist{
+    margin-top: 15px;
+}
+.b3{
+    margin-left: 30px;
+}
+.l2{
+    margin-left: 5px;
+}
+    

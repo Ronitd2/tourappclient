@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+/* Universal Padding*/
+.uni-padding{
+    padding:0% 7%;
+}
+/*Imp link*/
+.imp-link{
+    background-color: rgb(12, 16, 29);
+    color: white;
+    overflow: auto;
+}
+.div33{
+    width:33.33%;
+    float:left;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+.div33 h3{
+    text-decoration:underline;
+    text-underline-offset: 10px;
+}
+
+.footer-menu{
+    list-style-type: none;
+    padding: 0%;
+}
+.footer-menu li{
+    padding-bottom: 10px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+}
+.footer-menu a:hover{
+    color:rgb(71, 255, 87);
+}
+/* Copyright */
+.copyright{
+    color: white;
+    text-align: center;
+    background-color: rgb(9, 12, 19);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

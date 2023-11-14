@@ -1,0 +1,259 @@
+body{
+    background-color: white !important;
+}
+.r1{
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.r1:hover{
+    background-color: #E3DFFD;
+}
+.top-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    color: rgb(47, 208, 47);
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid rgb(47, 208, 47);
+    border-radius: 4px;
+}
+.km:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.p1{
+    color: black;
+}
+.top-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-right: 5px;
+    background: #FFD95A;
+    border-radius: 10px;
+}
+.arrival p{
+    font-weight: bold;
+}
+.Departure p{
+    font-weight: bold;
+}
+.last-hr{
+    margin-top: 1rem;
+}
+.arrival-con{
+    display:  flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-inline: 10px;
+    gap: 1rem;
+}
+.origin-checkbox{
+    display: flex;
+    padding: 2px;
+    gap: 4rem;
+}
+.destination-station p{
+    font-weight: bold;
+}
+.destination-station-con{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+}
+.quota-btn{
+    padding-inline: 4px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.quota p{
+    font-weight: bold;
+}
+.main{
+    margin-top: 1rem;
+    width: 60%;
+    margin-inline: auto;
+    /* background-color: #e5e3e8 !important; */
+}
+.navbar-spaceholder{
+    width: 100%;
+    height: 100px;
+    background-color: #e5e3e8 !important;
+
+}
+.travel-info{
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.travel-info h1{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.travel-info p{
+    font-weight: bold;
+}
+.select-date{
+    width: 12rem;
+}
+.booking{
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 1rem;
+}
+.left{
+    max-width: 17rem;
+    min-width: 15rem;
+    border: 2px solid black;
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+}
+hr{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    border: 1px solid black !important;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2px;
+}
+.filter p{
+    font-weight: bold;
+}
+.origin-station p{
+    font-weight: bold;
+}
+.sort{
+    margin-top: 1rem;
+    background-color: white;
+    padding-inline: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+.reset-all{
+    color: rgb(58, 229, 58);
+}
+.right{
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    padding: 2px;
+    border-radius: 4px;
+}
+.train-info{
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding:10px ;
+    background-color: white;
+    /* max-width: 40rem; */
+    /* min-width: 39rem; */
+}
+@media (max-width: 600px) {
+   .booking{
+    flex-direction: column;
+   }
+   .left{
+    display: none;
+   }
+   .main{
+    width: 95%;
+   }
+   .top-div{
+    padding-right: 2px;
+   }
+   .travel-info{
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+   }
+   .select-date{
+    display: none;
+   }
+   .travel-info h1{
+    font-size: 0.9rem;
+}
+.train-info{
+    max-width: 100% !important;
+}
+}
+
+.ti-top{
+    display: flex;
+    justify-content: space-between;
+}
+.psno{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.psnosrc{
+    width: 60px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.seat{
+    background-color:#F1F6F9;
+    margin-left: 30px;
+}
+.seat:hover{
+    background-color: #B0DAFF;
+}
+.seattype{
+    padding: 10px;
+}
+.trainnamedetails{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.timedetails{
+    color: grey;
+    font-weight: bold;
+}
+.nameentry{
+    margin-top: 15px;
+}
+.scale-up-hor-center {
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  @keyframes scale-up-hor-center {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+    }
+  }
+  

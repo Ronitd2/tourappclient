@@ -1,0 +1,71 @@
+.header1{
+    background-image: url('C:\Users\ronit\OneDrive\Documents\driver\FULL STACK MERN DEVELOPMENT\tourapp\client\src\Components\images\img1.png');
+    background-size: cover;
+    height: 500px;
+}
+.place{
+    /* margin-top: 25px; */
+    margin-bottom: 25px;
+}
+.search-bar{
+    padding-left: 0px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+/* search bar heading */
+.search-bar h1{
+    font-weight: bold;
+}
+.search-bar h5{
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+/* search area*/
+/* .search{
+    width: 50%;
+    height: 30%;
+    border-radius: 50px;
+} */
+.search_input:hover{
+    border:solid 2px;
+    border-color: rgb(25, 99, 77);
+    transition: .1s;
+}
+.search_input{
+    /* flex:1; */
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 8%;
+    border-radius: 50px;
+}
+.search_button{
+    background:rgb(25, 99, 77);
+    padding: 1% 2%;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color:white;
+    border-radius: 30px;
+}
+.search_button:hover{
+    color: rgb(25, 99, 77);
+    background-color: white;
+    border: solid 2px;
+    border-color: rgb(25, 99, 77);
+    transition: .1s;
+}
+.navback:hover{
+    border:solid 2px;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: rgb(25, 99, 77);
+    border-color: rgb(25, 99, 77);
+    color:white;
+    transition: .1s;
+}
+
+
+
+  

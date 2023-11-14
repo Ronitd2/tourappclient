@@ -1,0 +1,32 @@
+.season_bg{
+    margin-top: 50px;;
+}
+.season_button{
+    border: none;
+    background-color: white;
+}
+.season_button img:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+.season_heading{
+    font-weight: 600;
+}
+.season_title p{
+    text-align: left;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 630;
+    color: rgb(45, 48, 51);
+}
+.season_title h3{
+    text-align: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(45, 48, 51);
+}
+.season_title p:hover{
+    color:rgb(25, 99, 77);
+    transition: .2s;
+}

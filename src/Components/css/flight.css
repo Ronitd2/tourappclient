@@ -1,0 +1,50 @@
+.header{
+    background-image: url('C:\Users\ronit\OneDrive\Documents\driver\FULL STACK MERN DEVELOPMENT\tourapp\client\src\Components\images\background3.jpg');
+    background-size: cover;
+    height: 500px;
+}
+.booktype{
+    margin-top: 100px;
+    height: 100px;
+    
+}
+.bookhead{
+    text-align: center;
+    color: aliceblue;
+}
+.bookblock{
+    border-color:#82CD47;
+    border-style:solid;
+    border-width: 2px;
+    /* height: 200px; */
+}
+#catagory{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.ticket-block{
+    margin-top: 10px;
+    padding: 10px;
+}
+.ticket-part{
+    border-style:solid;
+    border-color:#82CD47;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    padding: 9px;
+}
+.ticket-part:hover{
+    background-color: #CFF5E7;
+}
+.source{
+    font-family: 'Carlito', sans-serif;
+    color: #7B8FA1;
+    font-weight: bold;
+    margin-left:5px;
+}
+.btnsrc{
+    padding-top: 20px;
+    padding-left:50px;
+}

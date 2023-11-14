@@ -1,0 +1,31 @@
+.booking_body {
+    padding: 30px;
+    background-color: #f8f9fa;
+  }
+
+  .search-container {
+    max-width: 86%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-container h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .btn-search {
+    width: 100%;
+  }
+  .hotelhead{
+    background-image:url('C:\Users\ronit\OneDrive\Documents\driver\FULL STACK MERN DEVELOPMENT\tourapp\client\src\Components\images\img3.png');
+    height: 400px;
+    background-size: cover;
+  }
