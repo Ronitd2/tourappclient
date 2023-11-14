@@ -25,7 +25,7 @@
     width: 100%;
   }
   .hotelhead{
-    background-image:url('C:\Users\ronit\OneDrive\Documents\driver\FULL STACK MERN DEVELOPMENT\tourapp\client\src\Components\images\img3.png');
+    /* background-image:url('C:\Users\ronit\OneDrive\Documents\driver\FULL STACK MERN DEVELOPMENT\tourapp\client\src\Components\images\img3.png'); */
     height: 400px;
     background-size: cover;
   }
