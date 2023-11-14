@@ -14,7 +14,7 @@ const Login = () => {
   async function handleSubmit(e){
     e.preventDefault();
     try{
-      const data = await axios.post('http://localhost:8000/login/', {
+      const data = await axios.post('https://tourappbackend-6098.onrender.com/login/', {
         email, password
       })
       console.log("Token",data.data.token)
