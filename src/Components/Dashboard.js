@@ -53,7 +53,7 @@ export default function Dashboard(){
                                 })}
                             </tbody>
                             </table>
-                            <button type="button"  className="btn btn-primary" onClick={context.getbooking}>Get Histrory</button>
+                            {/* <button type="button"  className="btn btn-primary" onClick={context.getbooking}>Get Histrory</button> */}
                         </div>
                     </div>
                     

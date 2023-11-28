@@ -3,7 +3,11 @@ import Navbar from "./Navbar";
 import TrainContext from '../Context/Traincontext'
 import { useContext } from 'react';
 import "./css/Train.css";
-
+import  irctclogo from "./images/IRCTC_Logo.svg.png";
+import checkmark from "./images/check-mark.png";
+import ticket from "./images/ticket.png";
+import creditcard from "./images/credit-card.png";
+import support from "./images/support.png";
 import { Outlet, Link } from "react-router-dom";
 export default function Train(){
     let context = useContext(TrainContext)
@@ -69,10 +73,46 @@ export default function Train(){
                 </div>
                 <div className="col-lg-3  btnsrc">
                     <button type="submit"  id="search" onClick={Search} className=" btn btn-primary searchbutton justify-content-center"><Link to="/train/trainticket" className="srch">Search</Link></button>
-                        {/* <Link to="/trainticket">search</Link> */}
-                        
+                        {/* <Link to="/trainticket">search</Link> */}        
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        <div className="poster">
+            <h2 className="">Official Partner Of IRCTC </h2>
+            <img  className="irctclogo" src={irctclogo}></img>
+        </div>
+
+        <div className="poster-elements">
+            <div className="posteritems">
+                <img className="postersicon" src={ticket}></img>
+                <div>
+                <h5>Easy IRCTC Ticket Cancellations & Refund</h5>
+                <p>We give you one-click, hassle free IRCTC train ticket cancellation and refund. Desktop and mobile train ticket booking in just few easy steps.</p>
                 </div>
             </div>
+            <div className="posteritems">
+                <img className="postersicon" src={checkmark}></img>
+                <div>
+                <h5>Easy IRCTC Ticket Cancellations & Refund</h5>
+                <p>We give you one-click, hassle free IRCTC train ticket cancellation and refund. Desktop and mobile train ticket booking in just few easy steps.</p>
+                </div>
+            </div>
+            <div className="posteritems">
+                <img  className="postersicon" src={creditcard}></img>
+                <div>
+                <h5>Easy IRCTC Ticket Cancellations & Refund</h5>
+                <p>We give you one-click, hassle free IRCTC train ticket cancellation and refund. Desktop and mobile train ticket booking in just few easy steps.</p>
+                </div>
+            </div>
+            <div className="posteritems">
+                <img className="postersicon" src={support}></img>
+                <div>
+                <h5>Easy IRCTC Ticket Cancellations & Refund</h5>
+                <p>We give you one-click, hassle free IRCTC train ticket cancellation and refund. Desktop and mobile train ticket booking in just few easy steps.</p>
+                </div>
             </div>
         </div>
         {/* {train &&

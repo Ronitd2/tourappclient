@@ -235,6 +235,11 @@ hr{
 	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+.trainbutt{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #F1F6F9;
+}
 
 @-webkit-keyframes scale-up-hor-center {
     0% {

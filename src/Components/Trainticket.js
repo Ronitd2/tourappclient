@@ -133,6 +133,7 @@ export default function Trainticket(){
             {trainlist ? trainlist.map((element)=>{
               return <Element train={element}  key={element._id} />
               }):<div></div>}
+              {trainlist && <button type="submit"  id="next" className=" btn btn-primary"><Link to="/train/trainticket/trainbooking"><span className="trainbutt">Save & Next</span></Link></button>}
                 {/* <div className="row seattype">
                     <div className="rounded seat col">
                         <p>SL</p>
@@ -159,7 +160,7 @@ export default function Trainticket(){
            
             
           </div>
-          <div class="dropdown">
+          {/* <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Filter
             </button>
@@ -177,8 +178,8 @@ export default function Trainticket(){
                     </div>
               
             </div>
-          </div>
-          <button type="submit"  id="next" className=" btn btn-primary"><Link to="/train/trainticket/trainbooking">Save & Next</Link></button>
+          </div> */}
+          {/* <button type="submit"  id="next" className=" btn btn-primary"><Link to="/train/trainticket/trainbooking"><span className="trainbutt">Save & Next</span></Link></button> */}
                 
                 
      </div>

@@ -147,7 +147,11 @@ export default function Navbar()
                   </ul>
                 </li>)}
                 {
-                  localStorage.getItem('token') && <li className="nav-item"><button onClick={logOut} type="button" class="btn btn-light btnlog">Logout</button></li>
+                  localStorage.getItem('token') && 
+                  <div>
+                  <li className="nav-item"><NavLink className="nav-link navback" to="/dashboard" onClick={context.getbooking}>Account</NavLink></li>
+                  <li className="nav-item"><button onClick={logOut} type="button" class="btn btn-light btnlog">Logout</button></li>
+                  </div>
                 } 
                         
                       </ul>
