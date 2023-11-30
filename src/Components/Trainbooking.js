@@ -6,6 +6,9 @@ import Element2 from "./element2";
 import rupee from "./images/rupee.png"
 import Navbar from "./Navbar";
 import { BsDashLg } from "react-icons/bs";
+  import { ToastContainer} from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
 export default function Trainbooking(){
     let context = useContext(TrainContext)
     let traindata=context.specifictrain;
@@ -60,6 +63,7 @@ export default function Trainbooking(){
             <p className="card-text"><img className="rupees" src={rupee}></img>{trainprice && price}</p>
             <div className="paybox">
             <button onClick={trainbookingfun} className="btn btn-primary pay">Pay & BookNow</button>
+            <ToastContainer />
             </div>
         </div>
         </div>

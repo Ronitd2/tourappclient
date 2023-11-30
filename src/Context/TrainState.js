@@ -1,6 +1,7 @@
 import React from 'react'
 import TrainContext from './Traincontext';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import axios from 'axios';
 
 const TrainState = (props) => {
@@ -72,7 +73,11 @@ const TrainState = (props) => {
                 body:JSON.stringify(trainbook),
             });
             const result=await respond.json();
-             console.log(result)   
+             console.log(result)   ;
+             
+             toast.success("Booking Successful", {
+                position: toast.POSITION.TOP_CENTER
+              });
               }
               catch(err){
                 console.log("Error",err)
@@ -97,7 +102,10 @@ const TrainState = (props) => {
                     body:JSON.stringify(trainbook),
                 });
             const result=await respond.json();
-             console.log(result)   
+             console.log(result) ;
+             toast.success("Hotel Booking Successful", {
+                position: toast.POSITION.TOP_CENTER
+              });
               }
               catch(err){
                 console.log("Error",err)
@@ -123,7 +131,10 @@ const TrainState = (props) => {
                       body:JSON.stringify(trainbook),
                   });
                   const result=await respond.json();
-                   console.log(result)   
+                   console.log(result);
+                   toast.success("Dest Booking Successful", {
+                    position: toast.POSITION.TOP_CENTER
+                  });   
                     }
                     catch(err){
                       console.log("Error",err)
@@ -152,10 +163,12 @@ const TrainState = (props) => {
                    //alert(result.success);
                    if(result.acknowledge=='Successfull')
                    {
-                    alert('Add Successfull');
+                    toast("Add Successfull");
                    }
                    else{
-                    alert('You have already  booked and add this  place')
+                    toast.error("This place has already been added ", {
+                        position: toast.POSITION.TOP_LEFT
+                      });
                    }
                    console.log(result)   
                     }

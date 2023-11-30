@@ -67,3 +67,13 @@
     color: rgb(25, 99, 77);
     transition: .1s;
 }
+.hotelhead1{
+   
+    padding: 20px;
+
+}
+.headingtext{
+    
+    font-weight: bold;
+    color: dimgrey;
+}

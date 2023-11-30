@@ -10,6 +10,9 @@ import { Link } from "react-router-dom";
 import Placecomponent from "./Placecomponent";
 import Element5 from "./element5";
 import Pagenation from "./Pagenation";
+import { ToastContainer} from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 export default function Destbook(){
     let context = useContext(Destcontext);
     let context2= useContext(TrainContext)
@@ -115,6 +118,7 @@ export default function Destbook(){
                     </div>
                     </div>
             </div>
+             <ToastContainer />
 
         </div>
         <Footer/>
