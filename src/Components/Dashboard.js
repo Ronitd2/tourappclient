@@ -18,7 +18,7 @@ export default function Dashboard(){
             <div className="dashuser">
                 <div className="dashleft">
                     <img src={user} className="userpic" />
-                    <p className="username">{bookdetails && bookdetails[0].name}</p>
+                    {/* <p className="username">{bookdetails && bookdetails[0].name}</p> */}
                     <div className="destination">
                     <img src={destination} className="destpic" />
                     <p className="desttext">Add Destination</p>
@@ -29,9 +29,9 @@ export default function Dashboard(){
                     <div className="traveldetails">
                         <div className="upcoming-ticket">
                             <h4 className="text2">Upcoming Trips</h4>
-                            {bookdetails && bookdetails.map((element)=>{
+                            {/* {bookdetails && bookdetails.map((element)=>{
                                 return <Element4 booklist={element}  key={element._id} />
-                                })}    
+                                })}     */}
                         </div>
                         <div className="bookhistory">
                             <h4 className="text2">bookhistory</h4>
@@ -48,9 +48,9 @@ export default function Dashboard(){
                                 </tr>
                             </thead>
                             <tbody>
-                            {bookdetails && bookdetails.map((element)=>{
+                            {/* {bookdetails && bookdetails.map((element)=>{
                                 return <Element3 booklist={element}  key={element._id} />
-                                })}
+                                })} */}
                             </tbody>
                             </table>
                             {/* <button type="button"  className="btn btn-primary" onClick={context.getbooking}>Get Histrory</button> */}
