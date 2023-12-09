@@ -13,7 +13,7 @@ const Deststate = (props) => {
     const [placelist,setPlaceList]=useState('');
     const [pageNumber,setPageNumber]=useState('');
     const [travelList,setTravelList]=useState('');
-
+    const[userName,setUserName]=useState('');
     const sendplace = (dataf)=>{
       setSpeDest(dataf);
   }
@@ -97,10 +97,11 @@ const placenumber=async(place)=>{
         body:JSON.stringify(data),
       });
       //console.log(response);
-      const bookhistory=await response.json();
+      const bookdata=await response.json();
       
       // console.log(bookhistory);
-      setBookHistory(bookhistory);
+      setUserName(bookdata.name);
+      setBookHistory(bookdata.bookhistory);
     }
 
     const getallplace=async(pagenum,place)=>{
@@ -159,7 +160,7 @@ const placenumber=async(place)=>{
     
 
   return (
-    <DestContext.Provider value={{stateName,weatherState,destdet,spedestdet,bookHistory,placeNumber,placelist,pageNumber,travelList,fetchweather,fetchdest,sendplace,getbooking,placenumber,getallplace,gettravel}}>
+    <DestContext.Provider value={{stateName,weatherState,destdet,spedestdet,bookHistory,placeNumber,placelist,pageNumber,travelList,userName,fetchweather,fetchdest,sendplace,getbooking,placenumber,getallplace,gettravel}}>
         {props.children}
         </DestContext.Provider>
   )

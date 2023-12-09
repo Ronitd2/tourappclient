@@ -8,6 +8,7 @@ import destination from "./images/delivery.png";
 import user from "./images/user.png"
 export default function Dashboard(){
     let context = useContext(Destcontext);
+    const username=context.userName;
     const bookdetails= context.bookHistory;
     // {bookdetails? console.log(bookdetails):console.log("Not available")};
     return(
@@ -18,7 +19,7 @@ export default function Dashboard(){
             <div className="dashuser">
                 <div className="dashleft">
                     <img src={user} className="userpic" />
-                    <p className="username">{bookdetails && bookdetails[0].name}</p>
+                    <p className="username">{username && username}</p>
                     <div className="destination">
                     <img src={destination} className="destpic" />
                     <p className="desttext">Add Destination</p>
