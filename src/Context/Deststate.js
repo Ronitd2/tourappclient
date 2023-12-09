@@ -98,6 +98,7 @@ const placenumber=async(place)=>{
       });
       //console.log(response);
       const bookhistory=await response.json();
+      console.log("getting bookhistory");
       console.log(bookhistory);
       setBookHistory(bookhistory);
     }
