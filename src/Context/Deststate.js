@@ -99,7 +99,7 @@ const placenumber=async(place)=>{
       //console.log(response);
       const bookdata=await response.json();
       
-      // console.log(bookhistory);
+       console.log(bookdata);
       setUserName(bookdata.name);
       setBookHistory(bookdata.bookhistory);
     }
