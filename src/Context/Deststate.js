@@ -101,7 +101,7 @@ const placenumber=async(place)=>{
       
        console.log(bookdata);
       setUserName(bookdata.name);
-      setBookHistory(bookdata.bookinghistory);
+      setBookHistory(bookdata.bookinghistroy);
     }
 
     const getallplace=async(pagenum,place)=>{
