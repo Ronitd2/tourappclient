@@ -9,7 +9,7 @@ import user from "./images/user.png"
 export default function Dashboard(){
     let context = useContext(Destcontext);
     const bookdetails= context.bookHistory;
-    {bookdetails? console.log(bookdetails):console.log("Not available")};
+    // {bookdetails? console.log(bookdetails):console.log("Not available")};
     return(
         <>
         <div className="head">
