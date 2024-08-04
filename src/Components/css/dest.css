@@ -149,4 +149,24 @@
 .l2{
     margin-left: 5px;
 }
+.resweather{
+    display: none;
+}
+@media (max-width: 768px){
+    .part2{
+        display: none;
+    }
+    .destcompic{
+        float: left;
+        height: 150px;
+        width: 180x;
+        margin-right: 10px;
+    }
+    .sg{
+        font-size: 1rem;
+    }
+    .resweather{
+        display: block;
+    }
+  }
     

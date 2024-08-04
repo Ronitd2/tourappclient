@@ -30,11 +30,15 @@ export default function Trainticket(){
                 <p>&#8594;</p>
                 <h1>{trainlist[0].to_station_name}</h1>
             </div>}
-
+                
             <div className="select-date">
                 <input  type="date" className="form-control"  id="exampleDataList" placeholder="Type to search..."/>
               </div>
         </div>
+                <div className="psnosize">
+                    <label className="psno" >passenger No</label>
+                    <input className="psnosrc" id="psno" onChange={pchange} type="number"></input>
+                </div>
 
         <div className="booking">
             <div className="left">

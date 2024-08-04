@@ -35,48 +35,51 @@ export default function Train(){
         
         
         <div className="header">
-        <Navbar/>  
-        <div className="booktype">
-            <h1 className="bookhead">TRAIN TICKET BOOKING</h1>
-        </div> 
-            <div className="container rounded p-3 bookblock">
-            <div className="journey-type">
-               <input type="radio"></input><label className="radio1">Check PNR status</label>
-               <input className="radio2" type="radio"></input><label className="radio1"> Check  train </label>  
-            </div>
-            
-            <div className="row justify-content-around ticket-block">
-                <div className="col-lg-3 ticket-part">
-                    <label  className="source form-label">From</label>
-                    
-                    <select class="form-control" id="sname" placeholder="New Delhi">
-                            <option>New Delhi</option>
-                            <option>Howrah</option>
-                            <option>Mumbai </option>
-                            <option>Shimla</option>
-                            <option>Bangalore</option>
-                    </select>
-                </div>
-                <div className="col-lg-3 ticket-part">
-                  <label  className="source form-label">To</label>
-                  <select class="form-control" id="dname" placeholder="New Delhi">
-                            <option>New Delhi</option>
-                            <option>Howrah</option>
-                            <option>Mumbai </option>
-                            <option>Shimla</option>
-                            <option>Bangalore</option>
-                    </select>
-                </div>
-                <div className="col-lg-3 ticket-part">
-                  <label  className="source form-label">Travel Date</label>
-                  <input  type="date" className="form-control" onChange={(e)=>(context.changedate(e.target.value))} id="date" placeholder="Type to search..."/>
-                </div>
-                <div className="col-lg-3  btnsrc">
-                    <button type="submit"  id="search" onClick={Search} className=" btn btn-primary searchbutton justify-content-center"><Link to="/train/trainticket" className="srch">Search</Link></button>
-                        {/* <Link to="/trainticket">search</Link> */}        
-                </div>
+            <Navbar/>  
+            <div className="booktype">
+                <h1 className="bookhead">TRAIN TICKET BOOKING</h1>
+            </div> 
 
-            </div>
+            <div className="container rounded p-3 bookblock">
+                
+                <div className="journey-type">
+
+                    <input type="radio"></input><label className="radio1">Check PNR status</label>
+                    <input className="radio2" type="radio"></input><label className="radio1"> Check  train </label>  
+                
+                </div>
+            
+                <div className="row justify-content-around ticket-block">
+                    <div className="col-lg-3 ticket-part">
+                        <label  className="source form-label">From</label>
+                        
+                        <select class="form-control" id="sname" placeholder="New Delhi">
+                                <option>New Delhi</option>
+                                <option>Howrah</option>
+                                <option>Mumbai </option>
+                                <option>Shimla</option>
+                                <option>Bangalore</option>
+                        </select>
+                    </div>
+                    <div className="col-lg-3 ticket-part">
+                    <label  className="source form-label">To</label>
+                    <select class="form-control" id="dname" placeholder="New Delhi">
+                                <option>New Delhi</option>
+                                <option>Howrah</option>
+                                <option>Mumbai </option>
+                                <option>Shimla</option>
+                                <option>Bangalore</option>
+                        </select>
+                    </div>
+                    <div className="col-lg-3 ticket-part">
+                    <label  className="source form-label">Travel Date</label>
+                    <input  type="date" className="form-control" onChange={(e)=>(context.changedate(e.target.value))} id="date" placeholder="Type to search..."/>
+                    </div>
+                    <div className="col-lg-3  btnsrc">
+                        <button type="submit"  id="search" onClick={Search} className=" btn btn-primary searchbutton justify-content-center"><Link to="/train/trainticket" className="srch">Search</Link></button>        
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -115,6 +118,7 @@ export default function Train(){
                 </div>
             </div>
         </div>
+        
         {/* {train &&
         <p>{train[0].train_name}</p>
         } */}

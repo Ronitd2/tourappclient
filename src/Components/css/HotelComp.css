@@ -77,3 +77,22 @@
     font-weight: bold;
     color: dimgrey;
 }
+.rateno{
+    display:inline;
+   }
+.sl{
+    display: none;
+   }
+@media (max-width: 768px){
+    .rateno{
+     display:none;
+    }
+    .hotel_location{
+        padding:13px 0px;
+        display: inline;
+    }
+    .sl{
+        display: inline;
+        margin-left: 15px;
+    }
+  }

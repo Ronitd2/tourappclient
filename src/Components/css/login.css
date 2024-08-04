@@ -135,7 +135,11 @@
     text-decoration: underline;
     color: #000;
 }
-@media only screen and(max-width: 768px){
+.visiblelog{
+    display: none;
+}
+@media only screen and(max-width: 776px){
+    
     .side-image{
         border-radius: 10px 10px 0 0;
     }
@@ -160,4 +164,43 @@
 }
 .clickhere{
     color:rgb(25, 99, 77);
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+@media (max-width: 600px) {
+    .responselogin{
+        display: none;
+    }
+    .visiblelog{
+        display: contents;
+    }
+    .visibleform{
+        display: flex;
+        height: 100%;
+        width: auto;
+        justify-content: center;
+        place-items: center;
+        padding: 10px;
+        margin-top: 100px;
+        border: 3px solid;
+        border-color: #224B0C;
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-right:10px;
+    }
+    .logres{
+        width: 70px;
+        height: 60px;
+    }
+    .loader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        width: 100%;
+    }
 }

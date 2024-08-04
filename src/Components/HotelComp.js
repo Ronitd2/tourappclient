@@ -23,24 +23,26 @@ function HotelComp(props){
                     <div className="box1">
                         <h5 className="hotel_name">{props.hotel.hotel_name}</h5>
                         <h6 className="hotel_location">{props.hotel.hotel_city}</h6>
-                        <div className="rating">
+                        <p className="sl">&nbsp;&nbsp;Rating</p>
+                        <p className="sl">7.7- Good</p>
+                        <div className="rating rateno">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star"></span>
                                 
-                            <span>&nbsp;&nbsp;Rating</span>
+                            <span >&nbsp;&nbsp;Rating</span>
                             </div>
-                        <span><pre>7.7- Good</pre></span>
+                        <span className="rateno"><pre>7.7- Good</pre></span>
                     </div>
                 </div>
 
                 <div className="col-sm-4">     
                     <div className="box2">
-                        <h6>Indian Epic</h6>
+                        <h6 className="rateno">Indian Epic</h6>
                         <p>&#8377;{props.hotel.perday_price}</p>
-                        <h5>&#10004;Free cancelation</h5>
+                        <h5 className="rateno">&#10004;Free cancelation</h5>
                         <button type="button" onClick={hotelbookingfun} className="btn btn-success">Book Now&nbsp;&nbsp;&#10093;</button>
                     </div>
                 </div>   

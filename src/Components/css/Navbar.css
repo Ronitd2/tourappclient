@@ -1,164 +1,224 @@
 
+.displaytype{
+    display: none;
+}
+.menustyle{
+  
+  display: none;
+}
 .logo img{
-    height: 80px;
-    width: 100px;
+  height: 80px;
+  width: 100px;
 }
 .logo{
-    float: left;
+  float: left;
 }
 .list{
-    float: right;
+  float: right;
 }
 .list li{
-    display: inline-block;
-    padding-top: 25px;
-    padding-left: 20px;
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 20px;
 }
 .list a{
-    text-decoration: none;
-    color:white;
-    font-size: 20px;
-    font-weight: bold;
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
 }
 /* .list a:hover{
-    color:rgb(108, 255, 63)
+  color:rgb(108, 255, 63)
 } */
 /* .navsec{
-   background-color: #3C486B;
-    
+ background-color: #3C486B;
+  
 } */
 .navfeat
 {
-    float: right;
-    margin-top: 15px;
+  float: right;
+  margin-top: 15px;
 }
 .feat{
-    display: inline;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 1rem;
-    position: relative;
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
 }
 .feat:hover{
-    color: #16FF00;
-    cursor: pointer;;
+  color: #16FF00;
+  cursor: pointer;;
 }
 .logos{
-    height: 120px;
-    width: 200px;
-    float: left;
+  height: 120px;
+  width: 200px;
+  float: left;
 }
 
 
 /* search section */
 .searchsec{
-    margin-top: 75px;
+  margin-top: 75px;
 }
 .headline2{
-    color:#3C486B;
-    font-weight:bold;
+  color:#3C486B;
+  font-weight:bold;
 }
 .searcharea{
-    width: 400px;
-    border-radius: 15px;
+  width: 400px;
+  border-radius: 15px;
 }
 .searchbtn{
-    /* background-color: #16FF00; */
-    border-radius: 15px;
-    width: 50px;
+  /* background-color: #16FF00; */
+  border-radius: 15px;
+  width: 50px;
 }
 .searchbtn:hover{
-    background-color: #16FF00; 
+  background-color: #16FF00; 
 }
 .searchlogo{
-    height: 15px;
-    width: 15px;    
+  height: 15px;
+  width: 15px;    
 }
 .btnlog{
-  font-weight: bold;
-  color: #3C486B
+font-weight: bold;
+color: #3C486B
 }
 
 
 .navbar .dropdown-menu div[class*="col"] {
-    margin-bottom:1rem;
- }
+  margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+ border:none;
+ background-color:white!important;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+ 
+ /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+ padding-top:0px;
+ padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+ padding:.5rem .5rem;
+ margin:0 .25rem;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.area .dropdown-menu {
+width:10%;
+
+}
+
+.navbar .dropdown-menu {
+ width:50%;
+ left:35%;
+ right:0;
+/*  height of nav-item  */
+ top:65px;
+ 
+ display:block;
+ visibility: hidden;
+ opacity: 0;
+ transition: visibility 0s, opacity 0.3s linear;
+ 
+}
+
+
+
+ 
+ /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+ display:block;
+ visibility: visible;
+ opacity: 1;
+ transition: visibility 0s, opacity 0.3s linear;
+}
  
  .navbar .dropdown-menu {
-   border:none;
-   background-color:white!important;
+   border-top: 4px solid ;
+   border-color:#224B0C;
+   border-radius: 8px;
+   background-color: #fff;
  }
- 
- /* breakpoint and up - mega dropdown styles */
- @media screen and (min-width: 992px) {
-   
-   /* remove the padding from the navbar so the dropdown hover state is not broken */
- .navbar {
-   padding-top:0px;
-   padding-bottom:0px;
+ .text-state{
+  color: #224B0C;
+  font-weight: bold;
+  font-size: 1.3rem;
  }
- 
- /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
- .navbar .nav-item {
-   padding:.5rem .5rem;
-   margin:0 .25rem;
+ .hhh{
+  color: #3C486B;
+  font-size: 1rem
  }
- 
- /* makes the dropdown full width  */
- .navbar .dropdown {position:static;}
+ .hhh:hover{
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .2s
+ }
+}
 
- .area .dropdown-menu {
-  width:10%;
-  
- }
- 
- .navbar .dropdown-menu {
-   width:50%;
-   left:35%;
-   right:0;
- /*  height of nav-item  */
-   top:65px;
-   
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem; /* Equivalent to p-4 in Tailwind */
+  width: 100%; /* Equivalent to w-[100%] in Tailwind */
+  backdrop-filter: blur(8px); /* Equivalent to backdrop-blur-lg in Tailwind */
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+}
+
+/* Styles for the inner content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  height: 100vh; /* Equivalent to h-screen in Tailwind */
+  text-align: center;
+  color: rgba(153, 153, 153, 1); /* Equivalent to text-gray-500 in Tailwind */
+}
+
+/* Styles for the close button */
+.close-button {
+  height: 3rem; /* Equivalent to h-10 in Tailwind */
+  width: 3.5rem; /* Equivalent to w-12 in Tailwind */
+  cursor: pointer;
+}
+
+/* Styles for the gradient text menu */
+
+
+/* Styles for the menu items */
+.menu li {
+  margin-top: 2rem; /* Equivalent to mt-10 in Tailwind, adjust spacing as needed */
+  margin-bottom: 0; /* Override sm:m-0 in Tailwind */
+  list-style-type: none; /* Remove bullet points */
+  font-size: large;
+  font-weight: 600;
+}
+
+@media (max-width: 768px){
+  .displaytype{
    display:block;
-   visibility: hidden;
-   opacity: 0;
-   transition: visibility 0s, opacity 0.3s linear;
-   
- }
-
-  
- 
-   
-   /* shows the dropdown menu on hover */
- .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-   display:block;
-   visibility: visible;
-   opacity: 1;
-   transition: visibility 0s, opacity 0.3s linear;
- }
-   
-   .navbar .dropdown-menu {
-     border-top: 4px solid ;
-     border-color:#224B0C;
-     border-radius: 8px;
-     background-color: #fff;
-   }
-   .text-state{
-    color: #224B0C;
-    font-weight: bold;
-    font-size: 1.3rem;
-   }
-   .hhh{
-    color: #3C486B;
-    font-size: 1rem
-   }
-   .hhh:hover{
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: .2s
-   }
- }
-
-
+  }
+  .menustyle{
+    display: block;
+    
+  }
+  .menuimg{
+    height: 30px;
+    width: 25px;
+  }
+}

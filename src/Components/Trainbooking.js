@@ -48,7 +48,7 @@ export default function Trainbooking(){
                                 <BsDashLg className="line"/>
                                 <p className="desttime">{traindata.dest_time}   <span>{traindata.to_station_name}({traindata.train_dstn})</span></p>
                             </div>
-                           {trainseat && <div className="seatb" > 
+                           {trainseat && <div className="seatb seatboxi" > 
                                         <p style={{fontSize:'1.4rem',fontWeight:'bold',color:'#526D82'}}>SeatType</p>
                                         <p style={{fontSize:'1.1rem',fontWeight:'bold',color:'#212A3E'}}>{trainseat}</p>
                             </div>
@@ -58,12 +58,12 @@ export default function Trainbooking(){
                             
                                             
         <div className="card col-12 col-md-4" >
-        <div className="card-body">
-            <h5 className="card-title">Total Ticket Price :</h5>
-            <p className="card-text"><img className="rupees" src={rupee}></img>{trainprice && price}</p>
-            <div className="paybox">
-            <button onClick={trainbookingfun} className="btn btn-primary pay">Pay & BookNow</button>
-            <ToastContainer />
+            <div className="card-body payboxi">
+                <h5 className="card-title">Total Ticket Price :</h5>
+                <p className="card-text"><img className="rupees" src={rupee}></img>{trainprice && price}</p>
+                <div className="paybox">
+                <button onClick={trainbookingfun} className="btn btn-primary pay">Pay & BookNow</button>
+                <ToastContainer />
             </div>
         </div>
         </div>
@@ -113,6 +113,14 @@ export default function Trainbooking(){
                     <input type="password" class="form-control" id="inputPassword"/>
                     </div>
                 </div>
+            </div>
+            </div>
+            <div className="card-body payboxi2">
+                <h5 className="card-title">Total Ticket Price :</h5>
+                <p className="card-text"><img className="rupees" src={rupee}></img>{trainprice && price}</p>
+                <div className="paybox">
+                <button onClick={trainbookingfun} className="btn btn-primary pay">Pay & BookNow</button>
+                <ToastContainer />
             </div>
             </div>
             

@@ -32,11 +32,13 @@ function Place(){
 
       return(
         <>
-        <div className="place_bg container-fluid">
+        <div className="place_bg w-[100%] flex justify-center">
             <div className='container'>
-                <h1 className="place_head">Best to visit in India</h1>
+                <h1 className="pl-3 sm:pl-5 pt-4 text-4xl font-semibold ">Best to visit in India</h1>
+                <div className="flex w-[100%] justify-center mt-2">
+                <div className="w-[90%]">
                 <Carousel  autoPlay={true} autoPlaySpeed={3000}  transitionDuration={500} responsive={responsive}> 
-                    <div className='item'>
+                    <div className=''>
                         <div className="card border-0" style={{width: '17rem'}}>
                             <img className="card-img-top" style={{height: '12rem',width: '17rem'}} src={img1} alt="Card image cap"/>
                             <div className="card-body place_heading">
@@ -97,6 +99,8 @@ function Place(){
                         </div>
                     </div>
                 </Carousel>
+                </div>
+                </div>
             </div>
         </div>
         </>

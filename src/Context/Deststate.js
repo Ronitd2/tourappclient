@@ -139,7 +139,7 @@ const placenumber=async(place)=>{
                     body:JSON.stringify(fetchdata),
                 });
                 const result_dest=await respond.json();
-                //console.log(result_dest.placelist);
+                console.log(result_dest.placelist);
                 setTravelList(result_dest.placelist);
                 
     }

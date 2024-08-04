@@ -143,11 +143,12 @@ const TrainState = (props) => {
 
           const travelbooking=async(placename)=>{
             
-                  
+            const token =localStorage.getItem('token');
                   let trainbook={
                     date:date,
                     place:"Kolkata",
-                    travelplace:placename
+                    travelplace:placename,
+                    token:token
                   }
                   console.log(trainbook);
                   try{

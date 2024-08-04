@@ -96,6 +96,23 @@
 	-webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+.payboxi{
+    display: inline;
+}
+.payboxi2{
+    display: none;
+}
+@media (max-width: 600px) {
+    .payboxi{
+        display: none;
+    }  
+    .payboxi2{
+        display: inline;
+    }
+    .seatboxi{
+        display: none;
+    }
+}
 
  @-webkit-keyframes scale-up-top {
     0% {

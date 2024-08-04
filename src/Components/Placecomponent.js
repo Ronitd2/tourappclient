@@ -2,9 +2,12 @@ import React from "react";
 import pic from "./images/Place/India_gate.png";
 import { useContext } from 'react';
 import TrainContext from '../Context/Traincontext'
+
 export default function Placecomponent(props)
 {
-    let context= useContext(TrainContext)
+    
+    let context= useContext(TrainContext);
+   
     const addlist=()=>{
             context.travelbooking(props.placedetails.name)
         }
@@ -14,7 +17,7 @@ export default function Placecomponent(props)
             <div className="destpart">
                 <img src={props.placedetails.pic} className="destcompic"></img>
                 <h5 class="card-title">{props.placedetails.name}</h5>
-                <p class="card-text">{props.placedetails.details}</p>
+                <p class="card-text sg">{props.placedetails.details}</p>
             
             
                 <p class="card-text gghg">Location : <small class="text-muted ">{props.placedetails.location}</small></p>

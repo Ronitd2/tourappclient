@@ -5,13 +5,15 @@ import  down from "./images/down.png";
 import React from 'react';
 import "./css/Navbar.css";
 import Login from "./Login";
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
 import Destcontext from "../Context/Destcontext";
 import { Link } from "react-router-dom";
+import menu from "./images/menu.png"
+import cross from "./images/cross.png"
 export default function Navbar()
 {
   const navigate = useNavigate()
-
+  const [navbarStatus,setNavbarStatus]=useState(false);
   async function logOut(e){
     e.preventDefault();
     localStorage.removeItem('token');
@@ -31,7 +33,7 @@ export default function Navbar()
       <span class="text-muted">Toggleable via the navbar brand.</span>
     </div>
   </div> */}
-  <nav className="navsec navbar navbar-expand-sm">
+  <nav className="navsec navbar navbar-expand-sm ">
     {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> */}
@@ -157,36 +159,31 @@ export default function Navbar()
                       </ul>
                     </div>
                   </div>
-                </div>
-              
-  </nav>
-
-              {/* <nav className="navsec navbar navbar-expand-sm">
-                <div className="container">
-                  <a href="/" >
-                    <div className="logo">
-                        <img src={logo} alt="Logo"/>
-                    </div>
-                  </a>
-                  <div className="list">
-                    <div className="collapse navbar-collapse" id="navbar">
-                      <ul className="navbar-nav">
-                        <li className="nav-item"><a className="nav-link " href="/">Home</a></li>
-                        <li className="nav-item"><NavLink className="nav-link " to="about">About</NavLink></li>
-                        <li className="nav-item"><a className="nav-link " href="/">Destination</a></li>
-                        <li className="dropdown"><a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/">Tickets<span class="caret"></span></a>
-                			      <ul className="dropdown-menu">
-                              <li className="nav-item"><NavLink className="nav-link text-dark" to="/train">Train</NavLink></li>
-                              <li className="nav-item"><a class="nav-link text-dark" href="/">Flight</a></li>
-                			      </ul>
-                        </li>
-                        <li className="nav-item"><a className="nav-link " href="/">Booking</a></li>
-                        <li className="nav-item"><NavLink className="nav-link " to="/login">Login</NavLink></li>   
-                      </ul>
-                    </div>
+                  <div className="menustyle">
+                    <img src={menu} className="menuimg" onClick={()=>{setNavbarStatus(true)}}></img>
                   </div>
                 </div>
-              </nav> */}
+
+                {navbarStatus && 
+                <div class="overlay">
+                <img class="close-button" src={cross}  onClick={()=>{setNavbarStatus(false)}}/>
+                  <div class="content">
+                    
+                    <ul class="menu">
+                      <li><a  href="/">Home</a></li>
+                      <li><a href="/">Destination</a></li>
+                      <li><NavLink to="/train">Train</NavLink></li>
+                      <li><NavLink to="/booking">Booking</NavLink></li>
+                      <li><NavLink  to="/dashboard" onClick={context.getbooking}>Account</NavLink></li>
+                      <li ><a onClick={logOut}>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+                } 
+
+  </nav>
+
+          
                 
           
         </>

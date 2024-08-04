@@ -165,6 +165,9 @@ hr{
     /* max-width: 40rem; */
     /* min-width: 39rem; */
 }
+.psnosize{
+    display: none;
+}
 @media (max-width: 600px) {
    .booking{
     flex-direction: column;
@@ -191,6 +194,10 @@ hr{
    .travel-info h1{
     font-size: 0.9rem;
 }
+.psnosize{
+    display: inline;
+    margin-left: 20px;
+}
 .train-info{
     max-width: 100% !important;
 }
@@ -200,6 +207,7 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+
 .psno{
     font-family: sans-serif;
     font-weight: bold;
@@ -212,7 +220,7 @@ hr{
 }
 .seat{
     background-color:#F1F6F9;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .seat:hover{
     background-color: #B0DAFF;

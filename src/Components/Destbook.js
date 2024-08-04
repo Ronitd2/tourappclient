@@ -61,6 +61,40 @@ export default function Destbook(){
             </div>
             }
             
+            <div class="card resweather" style={{width:" 18rem"}}>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Weather <img className="weatherpic" src={weatherlogo} alt="Logo"/></h5>
+                        {weather &&
+                        <div>
+                        <p class="card-text">Tempareture:{Math.ceil((weather.current_observation.condition.temperature-32)*(5/9))}C </p>
+                        <p class="card-text">Texture:{weather.current_observation.condition.text} </p>
+                        <p class="card-text">wind:{weather.current_observation.wind.speed} </p>
+                        <p class="card-text">Humidity:{weather.current_observation.atmosphere.humidity} </p>
+                       
+                        </div>
+                        }
+                    </div>
+
+            </div>
+
+            <div class="card mt-2 resweather" style={{width:" 18rem"}}>
+                    
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg b3" onClick={bookdest}>Book This Place</button></li>
+                        <li class="list-group-item">
+                        <label  className="source form-label">Select Date For Travel</label>
+                        <input  type="date" className="form-control"placeholder="Type to search..." onChange={(e)=>(context2.destdate(e.target.value))}/>
+                        </li>
+                        <li class="list-group-item travel-list-text">Make a Travel List of {destdata.place} </li>
+                    </ul>
+                    <div class="card-footer">
+                        <Link to="/train"><button type="button"  class="btn btn-primary">Trainbooking</button></Link>
+                        <Link to="/booking"><button type="button"  class="btn btn-success l2">Hotelbooking</button></Link>
+                    </div>
+
+                </div>
+
             <h2>Places Of {destdata.place}</h2>
             {placelist && placelist.map((element)=>{
               return <Placecomponent placedetails={element}  key={element._id} />
@@ -83,9 +117,9 @@ export default function Destbook(){
             </div>
        
        
-            <div className="part2">
+            <div className="part2 ">
         
-            <div class="card" style={{width:" 18rem"}}>
+                <div class="card" style={{width:" 18rem"}}>
                     
                     <div class="card-body">
                         <h5 class="card-title">Weather <img className="weatherpic" src={weatherlogo} alt="Logo"/></h5>
@@ -99,13 +133,14 @@ export default function Destbook(){
                         </div>
                         }
                     </div>
-                    </div>
+
+                </div>
                     
                     
-                    <div class="card mt-5" style={{width:" 18rem"}}>
+                <div class="card mt-5" style={{width:" 18rem"}}>
+                    
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><button type="button" class="btn btn-primary btn-lg b3" onClick={bookdest}>Book This Place</button></li>
-
                         <li class="list-group-item">
                         <label  className="source form-label">Select Date For Travel</label>
                         <input  type="date" className="form-control"placeholder="Type to search..." onChange={(e)=>(context2.destdate(e.target.value))}/>
@@ -113,12 +148,15 @@ export default function Destbook(){
                         <li class="list-group-item travel-list-text">Make a Travel List of {destdata.place} </li>
                     </ul>
                     <div class="card-footer">
-                    <Link to="/train"><button type="button"  class="btn btn-primary">Trainbooking</button></Link>
-                    <Link to="/booking"><button type="button"  class="btn btn-success l2">Hotelbooking</button></Link>
+                        <Link to="/train"><button type="button"  class="btn btn-primary">Trainbooking</button></Link>
+                        <Link to="/booking"><button type="button"  class="btn btn-success l2">Hotelbooking</button></Link>
                     </div>
-                    </div>
+
+                </div>
+
             </div>
-             <ToastContainer />
+             
+            <ToastContainer />
 
         </div>
         <Footer/>
